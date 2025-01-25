@@ -16,3 +16,5 @@ toggle.addEventListener('click', () => {
 		localStorage.setItem('dark-mode', 'disabled');
 	}
 });
+
+console.log("Finished....")
