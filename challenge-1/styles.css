@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  color: white;
+  background-color: #070110;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.announcement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.announcement-link {
+  text-decoration: none;
+  background-color: #212122;
+  padding: 9px;
+  border-radius: 30px;
+}
+
+.announcement-link:hover {
+  cursor: pointer;
+
+  background-color: rgba(240, 248, 255, 0.193);
+}
+
+.announcement-text {
+  margin-left: 8px;
+  color: white;
+  font-weight: 500;
+}
+
+.announcement-button {
+  background-color: rgba(253, 253, 253, 0.736);
+  border-radius: 30px;
+  margin: 8px;
+  padding: 5px;
+  color: white;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 663px;
+}
+
+.hero-title {
+  margin: 20px;
+  line-height: 40px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.hero-description {
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.cta-button {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blueviolet;
+  padding: 8px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  width: 120px;
+  transition: all 700ms ease;
+}
+
+.cta-button:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 10px 2px rgb(57, 103, 188);
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 1rem;
+  }
+
+  .announcement-link {
+    font-size: 0.75rem;
+  }
+
+  .hero-content {
+    padding: 0 1rem;
+  }
+}
